@@ -2,7 +2,7 @@
 
 Quick account api in Laravel
 
-### Installation & Setup
+## Installation & Setup
 This project was developed in the PHP framework Laravel, the best way to run it is through its dedicated dev environment called Valet.
 
 Valet requires macOS and [Homebrew](http://brew.sh/). Before installation, you should make sure that no other programs (such as Apache or Nginx) are binding to your local machine's port 80.
@@ -57,8 +57,8 @@ I decided to go for all epics provided. I thought they were good challenges I wa
 |        | GET      | api/e3/customer/{id}/balances       |      | App\Http\Controllers\E3\CustomerController@balances | api        |
 |        | GET      | api/e3/customer/{id}/search         |      | App\Http\Controllers\E3\CustomerController@search   | api        |
 
-* {guid} represents the account id
-* {id} represents the customer id
+* ```{guid}``` represents the account id
+* ```{id}``` represents the customer id
 
 #### The only routes that allow request queries are the ones for the 3rd epic:
 
