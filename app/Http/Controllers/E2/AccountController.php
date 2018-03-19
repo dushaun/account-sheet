@@ -21,7 +21,7 @@ class AccountController extends Controller
      * Get the balance for the given GUID
      *
      * @param string $guid
-     * @return json
+     * @return Illuminate\Http\Response
      */
     public function balance(string $guid)
     {
@@ -36,7 +36,7 @@ class AccountController extends Controller
      * Get the details for the given GUID
      *
      * @param string $guid
-     * @return json
+     * @return Illuminate\Http\Response
      */
     public function details(string $guid)
     {

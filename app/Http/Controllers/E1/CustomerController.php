@@ -20,7 +20,7 @@ class CustomerController extends Controller
     /**
      * Return all the accounts that are in debt.
      *
-     * @return json
+     * @return Illuminate\Http\Response
      */
     public function debt()
     {
@@ -37,7 +37,7 @@ class CustomerController extends Controller
      * Return the details of the selected in debt account.
      *
      * @param string $guid
-     * @return void
+     * @return Illuminate\Http\Response
      */
     public function account(string $guid)
     {

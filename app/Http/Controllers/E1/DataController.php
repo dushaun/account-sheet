@@ -10,7 +10,7 @@ class DataController extends Controller
     /**
      * Load json data from file.
      *
-     * @return json
+     * @return Illuminate\Support\Collection
      */
     private function getData()
     {
@@ -21,7 +21,7 @@ class DataController extends Controller
      * Return the details of an account from a give guid.
      *
      * @param string $guid
-     * @return void
+     * @return Illuminate\Support\Collection
      */
     public function getAccount(string $guid)
     {
@@ -34,7 +34,7 @@ class DataController extends Controller
     /**
      * Return a list of all accounts under the customer
      *
-     * @return void
+     * @return Illuminate\Support\Collection
      */
     public function getAccounts()
     {
@@ -45,7 +45,7 @@ class DataController extends Controller
      * Return the balance of an account from a given guid.
      *
      * @param string $guid
-     * @return void
+     * @return Illuminate\Support\Collection
      */
     public function getBalance(string $guid)
     {

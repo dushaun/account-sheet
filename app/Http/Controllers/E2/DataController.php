@@ -19,7 +19,7 @@ class DataController extends Controller
      * - customers gets merged into one json array that can be queried.
      * - This logic is done in the next method
      *
-     * @return json
+     * @return Illuminate\Support\Collection
      */
     private function getData()
     {
@@ -49,7 +49,9 @@ class DataController extends Controller
      * - files gets downloaded so the correct account can be found.
      *
      * @param string $guid
-     * @return void
+     * @param string $from
+     * @param string $id
+     * @return Illuminate\Support\Collection
      */
     public function getAccount(string $guid, string $from = null, string $id = null)
     {
@@ -72,7 +74,8 @@ class DataController extends Controller
     /**
      * Return a list of all accounts under the customer
      *
-     * @return void
+     * @param string $id
+     * @return Illuminate\Support\Collection
      */
     public function getAccounts(string $id)
     {
@@ -91,7 +94,7 @@ class DataController extends Controller
      * Return the balance of an account from a given guid.
      *
      * @param string $guid
-     * @return void
+     * @return Illuminate\Support\Collection
      */
     public function getBalance(string $guid)
     {

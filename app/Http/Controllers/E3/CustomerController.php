@@ -25,7 +25,7 @@ class CustomerController extends Controller
      *
      * @param Request $request
      * @param string $id
-     * @return void
+     * @return Illuminate\Http\Response
      */
     public function search(Request $request, string $id)
     {
@@ -71,7 +71,7 @@ class CustomerController extends Controller
      *
      * @param Request $request
      * @param string $id
-     * @return void
+     * @return Illuminate\Http\Response
      */
     public function balances(Request $request, string $id)
     {

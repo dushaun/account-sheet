@@ -18,7 +18,7 @@ class DataController extends Controller
     /**
      * Load json data from file.
      *
-     * @return json
+     * @return Illuminate\Support\Collection
      */
     private function getData()
     {
@@ -44,7 +44,8 @@ class DataController extends Controller
     /**
      * Return a list of all accounts under the customer
      *
-     * @return void
+     * @param string $id
+     * @return Illuminate\Support\Collection
      */
     public function getAccounts(string $id)
     {
