@@ -10,10 +10,9 @@ class EpicTwoTest extends TestCase
 {
     /**
      * A basic test example.
-     *
-     * @return void
+     * @test
      */
-    public function testExample()
+    public function example()
     {
         $this->assertTrue(true);
     }
